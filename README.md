@@ -102,7 +102,7 @@ console.log(value)
 
 ```html
 <section id="heading-21-section">
-  <h2>
+  <h2 id="heading-21" role="presentation">
     <a href="#heading-21" class="heading-anchor">
       <button type="button" class="heading-anchor__btn">#</button>
     </a>
@@ -112,7 +112,7 @@ console.log(value)
 </section>
 
 <section id="heading-22-section">
-  <h2>
+  <h2 id="heading-22" role="presentation">
     <a href="#heading-22" class="heading-anchor">
       <button type="button" class="heading-anchor__btn">#</button>
     </a>
@@ -120,7 +120,7 @@ console.log(value)
   </h2>
   <p>Paragraph 2</p>
   <section id="heading-31-section">
-    <h3>
+    <h3 id="heading-31" role="presentation">
       <a href="#heading-31" class="heading-anchor">
         <button type="button" class="heading-anchor__btn">#</button>
       </a>
@@ -131,7 +131,7 @@ console.log(value)
 </section>
 
 <section id="heading-23-section">
-  <h2>
+  <h2 id="heading-23" role="presentation">
     <a href="#heading-23" class="heading-anchor">
       <button type="button" class="heading-anchor__btn">#</button>
     </a>

@@ -76,7 +76,7 @@ const rehypeSlugAnchorSectionize: Plugin<
             endIndex > 0 ? endIndex : undefined
           )
 
-          const slugId = node.properties.id || slug(hastToString(node)) || null
+          const slugId = slug(hastToString(node)) || null
 
           const linkProps = {
             href: `#${slugId}`,
@@ -95,12 +95,12 @@ const rehypeSlugAnchorSectionize: Plugin<
             }),
           }
 
-          const section = {
-            type: 'element',
-            tagName: options.wrapperTagName,
-            properties: sectionProps,
-            children: between,
-          } as Element
+          node.properties = {
+            ...(slugId && {
+              id: slugId,
+            }),
+            role: 'presentation',
+          }
 
           node.children = [
             {
@@ -120,18 +120,16 @@ const rehypeSlugAnchorSectionize: Plugin<
               type: 'element',
               tagName: 'span',
               properties: { role: 'heading', ariaLevel: depthTag.slice(1) },
-              children: [
-                Object.assign({}, ...node.children, {
-                  properties: {
-                    ...(slugId && {
-                      id: slugId,
-                    }),
-                    role: 'presentation',
-                  },
-                }),
-              ],
+              children: node.children,
             },
           ]
+
+          const section = {
+            type: 'element',
+            tagName: options.wrapperTagName,
+            properties: sectionProps,
+            children: between,
+          } as Element
 
           parent.children.splice(startIndex, section.children.length, section)
         }
