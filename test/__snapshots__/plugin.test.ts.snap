@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should ... 1`] = `
+"<section id=\\"heading-21-section\\"><h2><a href=\\"#heading-21\\" class=\\"heading-anchor\\"><button type=\\"button\\" class=\\"heading-anchor__btn\\">#</button></a><span role=\\"heading\\" aria-level=\\"2\\">Heading 2.1</span></h2>
+<p>Paragraph 1</p>
+</section><section id=\\"heading-22-section\\"><h2><a href=\\"#heading-22\\" class=\\"heading-anchor\\"><button type=\\"button\\" class=\\"heading-anchor__btn\\">#</button></a><span role=\\"heading\\" aria-level=\\"2\\">Heading 2.2</span></h2>
+<p>Paragraph 2</p>
+<section id=\\"heading-31-section\\"><h3><a href=\\"#heading-31\\" class=\\"heading-anchor\\"><button type=\\"button\\" class=\\"heading-anchor__btn\\">#</button></a><span role=\\"heading\\" aria-level=\\"3\\">Heading 3.1</span></h3>
+<p>Paragraph 3</p>
+</section></section><section id=\\"heading-23-section\\"><h2><a href=\\"#heading-23\\" class=\\"heading-anchor\\"><button type=\\"button\\" class=\\"heading-anchor__btn\\">#</button></a><span role=\\"heading\\" aria-level=\\"2\\">Heading 2.3</span></h2>
+<p>Paragraph 4</p></section>"
+`;
