@@ -138,4 +138,5 @@ const rehypeSlugAnchorSectionize: Plugin<
   }
 }
 
+export { rehypeSlugAnchorSectionize }
 export default rehypeSlugAnchorSectionize
