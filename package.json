@@ -37,7 +37,6 @@
   "types": "dist/index.d.ts",
   "files": ["dist", "src"],
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "clean": "rm -rf dist",
     "lint": "biome check --apply-unsafe .",
     "fmt": "biome format . --write",
