@@ -43,9 +43,7 @@
     "build": "tsc",
     "watch": "tsc --watch",
     "type:check": "tsc --noEmit",
-    "test": "vitest",
-    "test:run": "vitest run",
-    "coverage": "vitest run --coverage",
+    "test": "node --import=tsx/esm --test ./test/plugin.test.ts",
     "prepare": "husky"
   },
   "dependencies": {
@@ -63,10 +61,10 @@
     "rehype-stringify": "^10.0.0",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.0.0",
+    "tsx": "^4.7.0",
     "typescript": "^5.2.2",
     "unified": "^11.0.3",
-    "unist-util-is": "^6.0.0",
-    "vitest": "^0.34.5"
+    "unist-util-is": "^6.0.0"
   },
   "engines": {
     "node": ">=16.0.0"

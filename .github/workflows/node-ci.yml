@@ -5,9 +5,19 @@ on:
 
   pull_request:
     branches: [main]
+    paths:
+      - '**.ts'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/*.yml'
 
   push:
     branches: [main]
+    paths:
+      - '**.ts'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/*.yml'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -27,7 +37,7 @@ jobs:
       - name: Setup Node environment
         uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
-          node-version: 16
+          node-version: 20.10.0
 
       - uses: pnpm/action-setup@d882d12c64e032187b2edb46d3a0d003b7a43598 # v2.4.0
         name: Install pnpm
@@ -54,7 +64,7 @@ jobs:
         run: pnpm install
 
       - name: Run build
-        run: pnpm run build
+        run: pnpm build
 
       - name: Run test
-        run: pnpm run test run
+        run: pnpm test
