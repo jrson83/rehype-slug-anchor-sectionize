@@ -29,7 +29,7 @@ devDependencies:
     specifier: ^20.7.0
     version: 20.11.5
   husky:
-    specifier: ^9.0.0
+    specifier: ^9.0.10
     version: 9.0.10
   nano-staged:
     specifier: ^0.8.0
