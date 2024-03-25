@@ -44,6 +44,7 @@
     "watch": "tsc --watch",
     "type:check": "tsc --noEmit",
     "test": "node --import=tsx/esm --test ./test/plugin.test.ts",
+    "quality-check": "pnpm lint && pnpm fmt && pnpm build && pnpm test",
     "prepare": "husky"
   },
   "dependencies": {
@@ -53,17 +54,17 @@
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.5.3",
-    "@types/hast": "^3.0.1",
-    "@types/node": "^20.7.0",
-    "husky": "^9.0.10",
+    "@biomejs/biome": "^1.6.2",
+    "@types/hast": "^3.0.4",
+    "@types/node": "^20.11.30",
+    "husky": "^9.0.11",
     "nano-staged": "^0.8.0",
     "rehype-stringify": "^10.0.0",
     "remark-parse": "^11.0.0",
-    "remark-rehype": "^11.0.0",
-    "tsx": "^4.7.0",
-    "typescript": "^5.2.2",
-    "unified": "^11.0.3",
+    "remark-rehype": "^11.1.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3",
+    "unified": "^11.0.4",
     "unist-util-is": "^6.0.0"
   },
   "engines": {
@@ -75,6 +76,5 @@
   "nano-staged": {
     "*.ts": "biome check --apply-unsafe .",
     "*": "biome format . --write"
-  },
-  "packageManager": "pnpm@8.15.1"
+  }
 }

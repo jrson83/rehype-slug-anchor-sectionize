@@ -14,7 +14,7 @@ export interface RehypeSlugAnchorSectionizeOptions {
   wrapperTagName?: string
 
   /** The wrapper Element `properties`. defaults to `undefined` */
-  wrapperProperties?: Element['properties']
+  wrapperProperties?: Element['properties'] | undefined
 
   /** Adds an additive at end of the wrappers id.  defaults to `-section` */
   wrapperSlugAdditive?: string

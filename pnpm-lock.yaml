@@ -20,16 +20,16 @@ dependencies:
 
 devDependencies:
   '@biomejs/biome':
-    specifier: ^1.5.3
+    specifier: ^1.6.2
     version: 1.6.2
   '@types/hast':
-    specifier: ^3.0.1
+    specifier: ^3.0.4
     version: 3.0.4
   '@types/node':
-    specifier: ^20.7.0
+    specifier: ^20.11.30
     version: 20.11.30
   husky:
-    specifier: ^9.0.10
+    specifier: ^9.0.11
     version: 9.0.11
   nano-staged:
     specifier: ^0.8.0
@@ -41,16 +41,16 @@ devDependencies:
     specifier: ^11.0.0
     version: 11.0.0
   remark-rehype:
-    specifier: ^11.0.0
+    specifier: ^11.1.0
     version: 11.1.0
   tsx:
-    specifier: ^4.7.0
+    specifier: ^4.7.1
     version: 4.7.1
   typescript:
-    specifier: ^5.2.2
-    version: 5.3.3
+    specifier: ^5.4.3
+    version: 5.4.3
   unified:
-    specifier: ^11.0.3
+    specifier: ^11.0.4
     version: 11.0.4
   unist-util-is:
     specifier: ^6.0.0
@@ -889,8 +889,8 @@ packages:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
     dev: true
 
-  /trough@2.1.0:
-    resolution: {integrity: sha512-AqTiAOLcj85xS7vQ8QkAV41hPDIJ71XJB4RCUrzo/1GM2CQwhkJGaf9Hgr7BOugMRpgGUrqRg/DrBDl4H40+8g==}
+  /trough@2.2.0:
+    resolution: {integrity: sha512-tmMpK00BjZiUyVyvrBK7knerNgmgvcV/KLVyuma/SC+TQN167GrMRciANTz09+k3zW8L8t60jWO1GpfkZdjTaw==}
     dev: true
 
   /tsx@4.7.1:
@@ -904,8 +904,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /typescript@5.3.3:
-    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+  /typescript@5.4.3:
+    resolution: {integrity: sha512-KrPd3PKaCLr78MalgiwJnA25Nm8HAmdwN3mYUYZgG/wizIo9EainNVQI9/yDavtVFRN2h3k8uf3GLHuhDMgEHg==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
@@ -922,7 +922,7 @@ packages:
       devlop: 1.1.0
       extend: 3.0.2
       is-plain-obj: 4.1.0
-      trough: 2.1.0
+      trough: 2.2.0
       vfile: 6.0.1
     dev: true
 
