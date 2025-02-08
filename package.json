@@ -36,14 +36,13 @@
   },
   "main": "./dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist", "src"],
+  "files": ["dist"],
   "scripts": {
     "clean": "rm -rf dist",
-    "lint": "biome check --apply-unsafe .",
+    "lint": "biome lint --write .",
     "fmt": "biome format . --write",
+    "dev": "tsc --watch",
     "build": "tsc",
-    "watch": "tsc --watch",
-    "type:check": "tsc --noEmit",
     "test": "node --import=tsx/esm --test ./test/plugin.test.ts",
     "quality-check": "pnpm lint && pnpm fmt && pnpm build && pnpm test",
     "prepare": "husky"
@@ -75,8 +74,7 @@
     "access": "public"
   },
   "nano-staged": {
-    "*.ts": "biome check --apply-unsafe .",
+    "*.ts": "biome lint --write .",
     "*": "biome format . --write"
-  },
-  "packageManager": "pnpm@9.15.5"
+  }
 }
