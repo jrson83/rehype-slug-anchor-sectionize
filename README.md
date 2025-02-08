@@ -46,7 +46,7 @@ Inspect the DOM tree and heading elements on any of my [Blog posts](https://jrso
 ## Install
 
 This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c).
-In Node.js (version 16+), install with [npm](https://docs.npmjs.com/cli/install):
+In Node.js (version 16.0+, or 18.0+), install with [npm](https://docs.npmjs.com/cli/install):
 
 ```shell
 npm install rehype-slug-anchor-sectionize
