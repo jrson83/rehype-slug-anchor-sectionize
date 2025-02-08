@@ -1,6 +1,6 @@
 {
   "name": "rehype-slug-anchor-sectionize",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "rehype plugin which wraps headings and their descendants in nested <section> elements and applies slugged anchor links to them.",
   "keywords": [
     "anchor",
