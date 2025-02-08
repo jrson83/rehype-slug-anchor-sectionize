@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "github-slugger": "^2.0.0",
-    "hast-util-to-string": "^3.0.0",
+    "hast-util-to-string": "^3.0.1",
     "unist-util-find-after": "^5.0.0",
     "unist-util-visit": "^5.0.0"
   },
