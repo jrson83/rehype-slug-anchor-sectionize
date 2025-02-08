@@ -152,7 +152,7 @@ h3 a[class="heading-anchor"] {
 }
 
 .heading-anchor__btn {
-  all: unset; /** replace with buttom reset */
+  all: unset; /** replace with button reset */
   width: 2rem;
   opacity: 0;
   color: #eee;
