@@ -63,7 +63,7 @@
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",
     "tsx": "^4.20.6",
-    "typescript": "^5.9.2",
+    "typescript": "^5.9.3",
     "unified": "^11.0.5",
     "unist-util-is": "^6.0.0"
   },
